@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+	  padding-left:200px;
+	  
+    }
+    .wrapper {
+      background-color: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px; 
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+    
+ 
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="#"><img src="images/logo.PNG" style="margin-top:5px; margin-right:20px; float:left" /></a>
+       <!-- search form -->
+          <form action="#" method="get" class="sidebar-form">
+            <div class="input-group col-sm-4">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+             </div>
+          </form>
+          <!-- /.search form -->
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <ul class="nav navbar-nav"> 
+        <li class="active"><a href="#">Pull Requests</a></li>
+        <li><a href="#">Issues</a></li>
+        <li><a href="#">Gist</a></li>  
+       </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="label"><i class="fa fa-bell"></i></span>
+                </a>
+              <ul class="dropdown-menu">
+              <li>No notification yet </li>
+            </ul>
+         </li>
+       <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="label"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+</span>
+                </a>
+              <ul class="dropdown-menu">
+              <li>Create New Repository </li>
+            </ul>
+          </li>  
+          
+           <li class="dropdown messages-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="label"><i class="fa fa-user" aria-hidden="true"></i> </span>
+                </a>
+              <ul class="dropdown-menu">
+              <li>Signed in as craftword </li>
+              <hr>
+             <li> <a href="#">Your Profile </a></li>
+             <li> <a href="#">Your star </a></li>
+             <li> <a href="#">Explore </a></li>
+             <li> <a href="#">Integration </a></li>
+             <li> <a href="#">Help </a></li>
+             <hr>
+             <li> <a href="#">Settings </a></li>
+             <li> <a href="#">Sign Out </a></li>
+            </ul>
+          </li>  
+          
+                      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-sm-12 col-md-12 wrapper"> 
+    <div class="col-xs-offset-2 col-sm-3 col-md-3"> 
+        <img src="images/sidesign.png">
+        <p>&nbsp; &nbsp; &nbsp;</p>
+        <h3>Crafword</h3>
+        <p>&nbsp; &nbsp; &nbsp;</p>
+        <a href="#"> Add a bio </a>
+        <p>&nbsp; &nbsp; </p>
+        <div class="col-sm-10 col-md-10"> 
+        <button type="button" class="btn btn-default btn-block" >Edit profile</button>
+        </div>
+   </div>
+    <div class=" col-sm-6 col-md-6"> 
+        <div class="well well-lg">
+          <div class="row">
+           <div class=" col-sm-9 col-md-9">
+                <strong>ProTip!</strong> Updating your profile with your name, location, and a profile picture helps other GitHub users get to know you.
+          </div>
+          <div class=" col-sm-3 col-md-3">
+                <button type="button" class="btn btn-success btn-block" ><i class="fa fa-edit"></i>Edit profile</button>
+          </div>
+        </div>  
+      </div>      
+       <div class="row">
+        <div class=" col-sm-12 col-md-12">
+           <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#Overview" aria-controls="home" role="tab" data-toggle="tab">Overview<span class="label label-default">5</span></a></li>
+              <li role="presentation"><a href="#Repositories" aria-controls="profile" role="tab" data-toggle="tab">Repositories<span class="label label-default">4</span></a></li>
+              <li role="presentation"><a href="#Stars" aria-controls="messages" role="tab" data-toggle="tab">Stars<span class="label label-default">0</span></a></li>
+              <li role="presentation"><a href="#Followers" aria-controls="settings" role="tab" data-toggle="tab">Followers<span class="label label-default">0</span></a></li>
+              <li role="presentation"><a href="#Following" aria-controls="settings" role="tab" data-toggle="tab">Following<span class="label label-default">0</span></a></li>                                    
+            </ul>
+
+              <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="Overview">
+                  <img src="images/overview.PNG" class="img-responsive" />
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Repositories">
+                 <img src="images/Repo.PNG" class="img-responsive"/>                       
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Stars">
+                    <img src="images/stars.PNG" class="img-responsive"/>                  
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Followers">
+                       <img src="images/followers.PNG" class="img-responsive"/>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Following">
+                  <img src="images/following.PNG" class="img-responsive"/>
+                </div>
+
+        </div>
+       </div>      
+        
+    </div>
+    <div class="row">
+     <div class=" col-sm-12 col-md-12">
+     <img src="images/static.PNG" class="img-responsive" />
+     </div>
+    </div>
+
+
+  </div>
+</div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>&copy;2017 Github, Inc &nbsp;&nbsp;<a href="#">Terms </a> &nbsp;<a href="#">Privacy </a> &nbsp;<a href="#">Security </a>&nbsp;<a href="#"> Status</a>&nbsp; <a href="#">Help </a>&nbsp;&nbsp;&nbsp;<img src="images/footlogo.PNG" /> &nbsp;&nbsp;<a href="#"> API</a> &nbsp;<a href="#"> Training</a>&nbsp;<a href="#"> Shop</a>&nbsp; <a href="#"> Blog</a>&nbsp;<a href="#"> About</a></p>
+</footer>
+
+</body>
+</html>
